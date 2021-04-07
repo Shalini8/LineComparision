@@ -8,20 +8,21 @@ public class LinesUC1 {
   public static void main(String args[])	
 	{
      		 double c, d;
-	c = points(2,3,4,5);
-	d = points(10,5,3,2);
-		String s=String.valueOf(c);
-		String s1=String.valueOf(d);
-     System.out.println("length of 1st line" +c);
-     System.out.println("length of 2nd line" +d);  
-		if (s.equals(s1)) {  
-	            System.out.println("both lines are equal");  
-		    	}
-	            else {
-	        	System.out.println("both lines are unequal");     
-	            }  
-		    
-		}
-		
-	}
+		 c = points(2,3,4,5);
+	         d = points(10,5,3,2);
+		    String s=String.valueOf(c);
+		    String s1=String.valueOf(d);
+		    System.out.println("length of 1st line" +c);
+		    System.out.println("length of 2nd line" +d);  
+		    int Result =  s.compareTo(s1);        
+        if(Result > 0) {  
+           System.out.println("line1 is greater than line2");  
+        } else if(Result< 0) {  
+           System.out.println("line1 is less than line2");  
+        } else {  
+           System.out.println("line1 is equal to line2");  
+        }  
+	 }
 
+
+}
